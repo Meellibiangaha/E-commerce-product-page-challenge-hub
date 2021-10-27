@@ -1,0 +1,274 @@
+html{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	margin: 0;
+	color: hsl(0, 0%, 0%);
+	font-family: 'Kumbh Sans', sans-serif;
+}
+#wrapper{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.header{
+	margin: 0 auto;
+	width: 90%;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.header_section{
+	display: flex;
+	align-items: center;
+}
+.header_item{
+	padding: 10px 15px;
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+.header_logo{
+	margin-top: -10px;
+	font-size: 35px;
+	font-weight: bold;
+}
+.nav_item{
+	position: relative;
+	color: hsl(219, 9%, 45%);
+	transition-duration: 0.2s;
+	text-decoration: none;
+
+}
+.nav_item:hover{
+	color: hsl(26, 100%, 55%);
+}
+
+
+/*Линия снизу*/
+.nav_item:after{
+	content: "";
+	text-align: center;
+	display: block;
+	position: absolute;
+	width: 0px;
+	margin: 42px auto;
+	height: 4px;
+	background-color: hsl(26, 100%, 55%);
+}
+
+.nav_item:hover:after{
+	width: 100%;
+}
+
+/*cart*/
+
+.cart{
+	transition-duration: 0.2s;
+}
+
+.cart:hover{
+	filter: invert(28%) sepia(79%) saturate(276%) hue-rotate(86deg) brightness(18%) contrast(119%);
+}
+
+
+/*avatar*/
+
+.avatar{
+	height: 50px;
+	width: 50px;
+	border: 2px solid;
+	border-color: transparent;
+	border-radius: 130px;
+	transition-duration: 0.3s;
+	cursor: pointer;
+}
+.avatar:hover{
+	border-color: hsl(26, 100%, 55%);
+}
+
+hr{
+	position: relative;
+	align-items: center;
+	background: hsl(0, 0%, 0%);
+	opacity: 0.35;
+	size: 2;
+	width: 1300px;
+}
+
+/*main*/
+
+.content_section{
+	padding: 80px 60px 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.box1{
+	width: 50%;
+	height: 700px;
+}
+
+.image__main{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 15px;
+}
+
+.slides{
+	display: none;
+	width: 70%;
+	border: 2px solid;
+	border-color: transparent;
+	border-radius: 25px;
+	cursor: pointer;
+}
+.block {
+	display: block;
+	object-fit: cover;
+}
+
+.image__thumbnail{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.slides_thumbnail{
+    margin-right: 15px;
+	width: 15%;
+	border: 3px solid;
+	border-color: transparent;
+	border-radius: 22px;
+	transition-duration: 0.3s;
+}
+.slides_thumbnail:hover{
+	opacity: 0.7;
+	cursor: pointer;
+	border-color: hsl(26, 100%, 55%);
+}
+.sl_th_active{
+	opacity: 0.7;
+	cursor: pointer;
+	border-color: hsl(26, 100%, 55%);
+}
+
+.box2{
+	width: 50%;
+	height: 700px;	
+}
+.text_content{
+	width: 70%;
+	padding: 60px 50px 50px;
+}
+.brend_name{
+	font-size: 14px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	color: hsl(26, 100%, 55%);
+}
+
+.h1{
+	font-size: 42px;
+}
+.p_text{
+	line-height: 1.7;
+}
+.price{
+	display: flex;
+	flex-direction: row;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 15px 0 15px;
+}
+.pr_discount{
+	text-align: center;
+	height: 20px;
+	padding: 5px;
+	margin-left: 20px;
+	margin-top: 3px;
+	font-weight: bold;
+	font-size: 18px;
+	color: hsl(26, 100%, 55%);
+	background-color: hsl(25, 100%, 94%);
+	border: solid;
+	border-color: transparent;
+	border-radius: 5px;
+}
+.discount{
+	color: hsl(220, 14%, 75%);
+	font-weight: 550;
+	text-decoration: line-through;
+	font-size: 20px;
+}
+
+.Add_product{
+	margin-left: 45px;
+	display: flex;
+	flex-direction: row;
+}
+.calculate{
+	width: 160px;
+	height: 50px;
+	background-color: hsl(223, 64%, 98%);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: solid;
+	border-color: transparent;
+	border-radius: 10px;
+}
+.minus{
+	margin-bottom: 5px
+}
+.count{
+	font-weight: bold;
+}
+.plus{}
+
+.button{
+	background-color: transparent;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.add_to_cart{
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 700;
+	margin-left: 30px;
+	width: 240px;
+	height: 50px;
+	background-color: hsl(26, 100%, 55%);
+	color: hsl(0, 0%, 100%);
+	border: solid;
+	border-color: transparent;
+	border-radius: 10px;
+	cursor: pointer;
+	transition-duration: 0.3s;
+}
+
+.add_to_cart:hover{
+	box-shadow: 0px 5px 12px 12px hsl(25, 100%, 94%);
+}
+
+.burger{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 22%;
+}
+
+.Add_card{
+	position: relative;
+	padding-right: 20px;
+	margin-top: 2px;
+}
+
