@@ -30,7 +30,7 @@ body{
 	div{
 		width: 320px;
 	}
-		.header{
+	.header{
 		width: 50%;
 		padding: 5px;
 	}
@@ -44,9 +44,9 @@ body{
 
 
 #wrapper{
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
 }
 .header{
 	margin: 0 auto;
@@ -174,7 +174,7 @@ hr{
 }
 
 .slides_thumbnail{
-  margin-right: 15px;
+	margin-right: 15px;
 	width: 15%;
 	border: 3px solid;
 	border-color: transparent;

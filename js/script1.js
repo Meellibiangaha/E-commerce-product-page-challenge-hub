@@ -16,7 +16,7 @@ plus.addEventListener("click", function(){
 	let current_count = document.querySelector('.count');
 	count++;
 	if(count >= 99){count = 99}
-	current_count.textContent = count;
+		current_count.textContent = count;
 });
 
 // Слайдер 1-й

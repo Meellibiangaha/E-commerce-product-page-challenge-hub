@@ -1,32 +1,29 @@
 
-Your users should be able to:
+##  Ваши пользователи должны уметь: ##
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Open a lightbox gallery by clicking on the large product image
-- Switch the large product image by clicking on the small thumbnail images
-- Add items to the cart
-- View the cart and remove items from it
+- Просмотр оптимального макета сайта в зависимости от размера экрана устройства. (не получилось)
+- Просматривайте состояния наведения для всех интерактивных элементов на странице (да)
+- Откройте галерею лайтбоксов, нажав на большое изображение продукта. (да, но только, если на 1ю картинку (я не смог додумать))
+- Переключите большое изображение продукта, нажав на маленькие миниатюры (да)
+- Добавить товары в корзину (да)
+- Просматривайте корзину и удаляйте из нее товары (да)
 
+#  Процесс #  
+- Html (div'ы)
+- Css (flexbox'ы/grid'ы)
+- JavaScript без библиотек (с одной микро-библиотекой "closest")  
+*** 
 
-//
-  Collections
-  Men
-  Women
-  About
-  Contact
+##  Результат ## 
+Для меня это было интересное задание, хоть я и сделал (как по мне) криво, но я узнал довольно много нового
+![](./screenshots/1.png)
+![](./screenshots/2.png)
+***
+Возможно, скрипт для слайдера можно написать короче и красивее...
+![](./screenshots/3.png)
 
-  Sneaker Company
+##  Ссылки, которые мне помогли ## 
 
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-//
+- [Js](https://medium.com/@dan.postnov/%D0%BC%D0%BE%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%BE%D0%BA%D0%BD%D0%B0-%D0%BD%D0%B0-javascript-30-%D1%81%D1%82%D1%80%D0%BE%D0%BA-%D0%BA%D0%BE%D0%B4%D0%B0-dbbb599649f3 "модальное окно")
+- [Js](https://developer.mozilla.org/ru/docs/Web/API/Element/classList)
+- [Css](https://html5book.ru/css-grid/)
