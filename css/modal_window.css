@@ -1,0 +1,142 @@
+/* Стили для подложки */
+
+.overlay {
+   
+   /* Скрываем подложку  */
+   opacity: 0;
+   visibility: hidden;
+   
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, .7);
+   z-index: 20;
+   transition: .3s all;
+}
+
+/* Стили для модальных окон */
+
+.modal {
+   
+   /* Скрываем окна  */
+   opacity: 0;
+   visibility: hidden;
+   
+   
+   /*  Установаем ширину окна  */
+   width: 100%;
+   max-width: 500px;
+   
+   /*  Центрируем и задаем z-index */
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 30; /* Должен быть выше чем у подложки*/
+   
+   /*  Побочные стили   */
+   box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); 
+   text-align: center;
+   border-radius: 3px;
+   transition: 0.3s all;
+}
+
+
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active{
+   opacity: 1;
+   visibility: visible;
+}
+
+/*Стили для img*/
+.modal_img{
+  width: 120%;
+  border-radius: 20px;
+  display: none;
+}
+.modal_block{
+  display: block;
+  justify-content: center;
+}
+
+.modal_img_thumb{
+  margin-top: 25px;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.modal_slides_thumbnail{
+  margin-right: 15px;
+  width: 22%;
+  border: 3px solid;
+  border-color: transparent;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+}
+.modal_slides_thumbnail:hover{
+  filter: brightness(.8);
+  cursor: pointer;
+  border-color: hsl(26, 100%, 55%);
+}
+.modal_slides_thumbnail_active{
+  filter: brightness(.8);
+  cursor: pointer;
+  border-color: hsl(26, 100%, 55%);
+}
+/*кнопки previos/next*/
+
+.modal_btn{
+  position: fixed;
+  background-color: white;
+  border-radius: 320px;
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  align-items: center;
+}
+.modal_btn_previos{
+  top: 42%;
+  left: -6%;
+}
+.modal_btn_next{
+  top: 42%;
+  left: 115%;
+}
+.mdl_btn_previos_img{ 
+  margin-top: 6px;
+  transition-duration: 0.2s;
+}
+.mdl_btn_next_img{
+  margin-top: 6px;
+  transition-duration: 0.2s;    
+}
+
+.modal_btn_previos:hover .mdl_btn_previos_img{
+  margin-right: 10px;
+}
+
+.modal_btn_next:hover .mdl_btn_next_img{
+  margin-left: 10px;
+}
+
+.close_btn{
+  width: 5%;
+  margin-bottom: 20px;
+  margin-left: 580px;
+  cursor: pointer;
+  user-select: none;
+  transition-duration: 0.2s;
+}
+.close_btn:hover{
+  filter: invert(28%) sepia(79%) saturate(276%) hue-rotate(86deg) brightness(18%) contrast(119%);
+}

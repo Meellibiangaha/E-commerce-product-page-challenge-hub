@@ -10,6 +10,9 @@
   display: none;
 }
 
+.cart:target{
+  display: block;
+}
 .box_block{
   display: block;
 }

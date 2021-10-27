@@ -31,7 +31,6 @@ let slide_3 = image_thumbail[2];
 let slide_4 = image_thumbail[3];
 
 slide_1.addEventListener("click", function (){
-	let current = i;
 	image_thumbail[i].classList.remove('sl_th_active');
 	image[i].classList.remove('block');
 	i = 0;
@@ -39,7 +38,6 @@ slide_1.addEventListener("click", function (){
 	image[i].classList.add('block');
 });
 slide_2.addEventListener("click", function (){
-	let current = i;
 	image_thumbail[i].classList.remove('sl_th_active');
 	image[i].classList.remove('block');
 	i = 1;
@@ -47,7 +45,6 @@ slide_2.addEventListener("click", function (){
 	image[i].classList.add('block');
 });
 slide_3.addEventListener("click", function (){
-	let current = i;
 	image_thumbail[i].classList.remove('sl_th_active');
 	image[i].classList.remove('block');
 	i = 2;
@@ -55,7 +52,6 @@ slide_3.addEventListener("click", function (){
 	image[i].classList.add('block');
 });
 slide_4.addEventListener("click", function (){
-	let current = i;
 	image_thumbail[i].classList.remove('sl_th_active');
 	image[i].classList.remove('block');
 	i = 3;
@@ -115,16 +111,3 @@ delete_button.addEventListener('click', function() {
 	document.querySelector('.count_product').textContent = 0;
 	document.querySelector('.max_price').textContent = 0;
 });
-
-// avatar
-
-document.querySelector('.avatar').addEventListener('click',function() {
-	document.body.style.background = 'seagreen';
-});
-
-// модальное окно со 2-м слайдером
-
-var modal = $modal({
-  title: 'Текст заголовка'
-}); 
-modal.show();

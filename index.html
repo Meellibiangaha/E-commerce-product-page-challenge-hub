@@ -35,7 +35,7 @@
 
       <div class="header_section">
         <div class="header_item"><a class="icon" href="#"><img class="cart" class="cart" src="images/icon-cart.svg"></a></div>
-        <div class="header_item"><a class="icon"><img class="avatar" src="images/avatar.jpg"></a></div>
+        <div class="header_item"><a class="icon" href="https://github.com/Meellibiangaha" target="_blank"><img class="avatar" src="images/avatar.jpg"></a></div>
       </div>
     </div>
 
@@ -43,33 +43,32 @@
       <div class="title">
         Cart
       </div>
-        <div class="empty_cart">
-          Your cart is empty.
+      <div class="empty_cart">
+        Your cart is empty.
+      </div>
+      <div class="grid_container grid_display">
+
+        <div class="post-1">
+          <img class="cart_img" src="images/image-product-1-thumbnail.jpg">
         </div>
-        <div class="grid_container grid_display">
+        <div class="post-2">
+          Fall Limited Edition Sneakers
+        </div>
+        <div class="post-3">$125.00 x <span class="count_product">0</span> <span class="max_price">$0.00</span></div>
 
-          <div class="post-1">
-            <img class="cart_img" src="images/image-product-1-thumbnail.jpg">
-          </div>
-          <div class="post-2">
-            Fall Limited Edition Sneakers
-          </div>
-          <div class="post-3">$125.00 x <span class="count_product">0</span> <span class="max_price">$0.00</span></div>
-
-          <div class="post-4">
-            <img class="delete_btn" src="images/icon-delete.svg">
-          </div>
-          <div class="chekout">Chekout</div>
+        <div class="post-4">
+          <img class="delete_btn" src="images/icon-delete.svg">
+        </div>
+        <div class="chekout">Chekout</div>
       </div>
     </div>
     <hr>
 
     <div class="content_section">
-
       <div class="box1">
 
-        <div class="image__main">
-          <img class="slides block" src="images/image-product-1.jpg">
+        <div class="image__main" >
+          <img class="slides block js-open-modal" data-modal="1" src="images/image-product-1.jpg">
           <img class="slides" src="images/image-product-2.jpg">
           <img class="slides" src="images/image-product-3.jpg">
           <img class="slides" src="images/image-product-4.jpg">
@@ -82,7 +81,36 @@
           <img class="slides_thumbnail" src="images/image-product-3-thumbnail.jpg">
           <img class="slides_thumbnail" src="images/image-product-4-thumbnail.jpg">
         </div>
+      </div> 
+
+      <!-- модальное окно -->
+      <div class="modal" data-modal="1">
+        <img class="close_btn js-modal-close" src="images/icon-close.svg">
+        <div class="modal_btn_previos modal_btn">
+          <img class="mdl_btn_previos_img" src="images/icon-previous.svg">
+        </div>
+          <div class="modal_btn_next modal_btn">
+            <img class="mdl_btn_next_img" src="images/icon-next.svg">
+          </div>
+        <div>
+          <!-- Текущее изображеник -->
+          <img class="modal_img modal_block" src="images/image-product-1.jpg">
+          <img class="modal_img" src="images/image-product-2.jpg">
+          <img class="modal_img" src="images/image-product-3.jpg">
+          <img class="modal_img" src="images/image-product-4.jpg">
+        </div>
+        <!-- Картинки снизу -->
+        <div class="modal_img_thumb">
+          <img class="modal_slides_thumbnail modal_slides_thumbnail_active" src="images/image-product-1-thumbnail.jpg">
+          <img class="modal_slides_thumbnail" src="images/image-product-2-thumbnail.jpg">
+          <img class="modal_slides_thumbnail" src="images/image-product-3-thumbnail.jpg">
+          <img class="modal_slides_thumbnail" src="images/image-product-4-thumbnail.jpg">
+        </div>
       </div>
+      <!-- Подложка под модальным окном -->
+      <div class="overlay js-overlay-modal"></div>
+
+
 
       <div class="box2">
 
@@ -120,5 +148,6 @@
   </div>
 
   <script type="text/javascript" src="js/script1.js"></script>
+  <script type="text/javascript" src="js/modalWindow.js"></script>
 </body>
 </html>
